@@ -1,19 +1,31 @@
 {
-  "name": "web",
+  "name": "appshot-2020-web",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf build",
+    "html": "mkdir build && cp src/index.html build/index.html",
+    "dev": "npm run clean && npm run html && webpack-dev-server --watch",
+    "build": "npm run clean && npm run html && webpack",
+    "lint": "eslint \"./src/**/*.{ts,tsx,js}\""
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Ben Junya<bjunya@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "@reach/router": "^1.2.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-hot-loader": "^4.12.17"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.8",
+    "@types/reach__router": "^1.2.6",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "eslint": "^6.6.0",
+    "rimraf": "^3.0.0"
   }
 }
