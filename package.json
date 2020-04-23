@@ -1,0 +1,22 @@
+{
+  "name": "appshot-2020",
+  "version": "1.0.0",
+  "description": "Personal Project boilerplate for 2020",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Junya",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^13.13.2",
+    "@types/react": "^16.9.34",
+    "next": "^9.3.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.8.3"
+  }
+}
