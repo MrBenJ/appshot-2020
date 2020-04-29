@@ -1,7 +1,13 @@
 import React from 'react';
 
+import DefaultLayout from '@layout/DefaultLayout';
+
 function HomePage() {
-  return <div>HomePage</div>;
+  return (
+    <DefaultLayout>
+      Hello homepage
+    </DefaultLayout>
+  );
 }
 
 export default HomePage;
